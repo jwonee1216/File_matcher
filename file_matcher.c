@@ -10,7 +10,7 @@
 
 #define FILE_A_PATH argv[1]
 #define FILE_B_PATH argv[2]
-#define ASSAY_PATH  ( (argc > 3) ? argv[3] : "result.txt")
+#define ASSAY_PATH  ( (argc > 3) ? argv[3] : "result.txt" )
 
 #define MAX_NUM(num1, num2) ( (num1 > num2) ? num1 : num2 )
 #define MIN_NUM(num1, num2) ( (num1 < num2) ? num1 : num2 )

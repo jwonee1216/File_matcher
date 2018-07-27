@@ -67,7 +67,7 @@ int main(int argc, char **argv)
         }
         fputc('\n', assay);
 
-        for(int i = 0; i < OFFSET; i++) {
+        for(i = 0; i < OFFSET; i++) {
             if(read_sizeA <= i && read_sizeB <= i)
                 break;
             

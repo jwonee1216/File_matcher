@@ -54,6 +54,7 @@ int main(int argc, char **argv)
         int read_sizeA = -1;
         int read_sizeB = -1;
 
+        
         fprintf(assay, "[%ld ~ %ld]\n", cur_size, MIN_NUM(cur_size + OFFSET, match_size) );
 
         read_sizeA = fread(fileA_str, 1, OFFSET, fileA);

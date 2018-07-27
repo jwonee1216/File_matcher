@@ -15,7 +15,9 @@
 #define MAX_NUM(num1, num2) ( (num1 > num2) ? num1 : num2 )
 #define MIN_NUM(num1, num2) ( (num1 < num2) ? num1 : num2 )
 
+
 ssize_t get_file_size(FILE *fp);
+
 
 int main(int argc, char **argv)
 {
@@ -90,6 +92,7 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
 
 ssize_t get_file_size(FILE *fp)
 {

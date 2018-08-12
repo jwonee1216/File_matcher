@@ -38,12 +38,17 @@ int main(int argc, char **argv)
 
     if(argc < 3) {
         fprintf(stderr, "Useage : %s [file A] [file B] {assay name}\n", argv[0]);
-        exit(-1);
+        exit(1);
     }
 
     fileA = fopen(FILE_A_PATH, "rb");
     fileB = fopen(FILE_B_PATH, "rb");
     assay = fopen(ASSAY_PATH, "wb");
+    
+    if(!fileA || !fileB || !assay) {
+        perror("File open");
+        exit(1);
+    }
 
     fileA_size = get_file_size(fileA);
     fileB_size = get_file_size(fileB);
